@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hu">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name="com.hu.MainActivity" />
+        <activity android:name="com.hu.activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hu.activity.RegisterActivity" />
+        <activity android:name="com.hu.activity.LoginActivity" />
+        <activity android:name="com.hu.activity.SettingActivity" />
+        <activity android:name="com.hu.activity.ModifyPswActivity" />
+        <activity android:name="com.hu.activity.FindPswActivity" />
+        <activity android:name="com.hu.activity.UserInfoActivity" />
+        <activity android:name="com.hu.activity.ModifyUserInfoActivity" />
+        <activity android:name="com.hu.activity.ExercisesDetailActivity" />
+        <activity android:name="com.hu.activity.CourseDetailActivity" />
+        <activity android:name="com.hu.activity.VideoPlayActivity" />
+        <activity android:name="com.hu.activity.PlayHistoryActivity"></activity>
+        <activity android:name=".activity.ModifyPhoneActivity"></activity>
+        <activity android:name=".activity.PersonalInfoActivity"></activity>
+    </application>
+
+</manifest>
